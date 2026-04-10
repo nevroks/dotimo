@@ -1,0 +1,8 @@
+.MainPage-board-header{
+    border: 1px solid #000000;
+    background-color: rgba(177, 177, 177, 0.377);
+    display: grid;
+    align-items: center;
+    height: 80px;
+    grid-template-columns: 100px 300px 1fr;
+}

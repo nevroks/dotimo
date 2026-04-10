@@ -1,0 +1,79 @@
+.Board-wrapper {
+    width: 800px;
+}
+
+.Board {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(127, 208, 255, 0.596);
+
+}
+
+.Board-colorPalette {
+
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(134, 134, 134);
+}
+
+.Board-colorPalette-item {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 25%;
+    
+    transition: all 0.2s ease;
+}
+.Board-colorPalette-item.current {
+    border: solid 2px black;
+    transform: scale(1.05);
+}
+
+.Board-colorPalette-item.orange {
+    background-color: orange;
+}
+
+.Board-colorPalette-item.violet {
+    background-color: violet;
+}
+
+.Board-colorPalette-item.seal {
+    background-color: #2e8b57;
+}
+
+.Board-cube {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border: solid 1px black;
+    cursor: move;
+    box-sizing: border-box;
+    user-select: none;
+    transition: border 0.2s ease;
+}
+
+.Board-cube.violet {
+    background-color: violet;
+}
+
+.Board-cube.seal {
+    background-color: #2e8b57;
+}
+
+.Board-cube.orange {
+    background-color: orange;
+}
+
+.Board-cube.selected {
+    border: dotted 2px black;
+}
+
+.Board-cube:active {
+    cursor: grabbing;
+}
